@@ -14,6 +14,13 @@
   "dependencies": {
     "react": "^15.4.2",
     "react-native": "^0.41.2",
-    "react-native-sound": "git+ssh://git@github.com:zmxv/react-native-sound.git#HEAD"
+    "react-native-sound": "git+ssh://git@github.com:zmxv/react-native-sound.git"
+  },
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start:android": "react-native run-android",
+    "start:ios": "react-native run-ios",
+    "start:web": "webpack-dev-server --content-base web/public/ -d --config ./web/webpack.config.js --inline --hot --colors",
+    "test": "jest"
   }
 }
